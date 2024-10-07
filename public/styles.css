@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif; 
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #397d54;
+}
+
+header {
+    background-color: #f1dd6a;
+    color: #235d3a;
+    padding: 10px 1px;
+    text-align: center;
+    animation: example 3s; 
+    
+}
+
+h1 {
+    padding: 0;
+    margin: 0; 
+    font-size: 35px; 
+}
+
+div {
+   
+    color: #000000;
+    padding: 2px;
+    margin: 5px; 
+    font-size: 30px;
+    text-decoration: none
+}
+
+div a {
+    display: inline; 
+    margin: 20px; 
+    animation: fadeln 2s;
+}
+
+@keyframes example {
+    from { background-color: afd7f6; }
+    to { background-color:#ffc77a;
+        ; }
+}
+
+@keyframes fadeln {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+nav a {
+    color: #ff6161;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 900px;
+    margin: 2.5rem auto;
+    padding: 1rem;
+    background: #9fc396;
+    border-radius: 10px;
+    box-shadow: 0 0 8px #000000;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    border-bottom: 0;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+h3 {
+    border-bottom: 0;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    padding-left: 40px;
+    margin: 0; 
+    font-size: 17px;
+    text-align: left;
+}
+
+h5 {
+    margin: 10px; 
+    padding-left: 60px;
+    padding-right: 20px;
+    font-size: 17px;
+    text-align: left;
+    font-weight: normal;
+
+}
+
+h6 {
+    margin: 10px; 
+    padding-left: 20px;
+    font-size: 15px;
+    text-align: left;
+    font-weight: normal;
+
+}
+
+h7 {
+    padding-left: 40px;
+    margin: 0; 
+    font-size: 16px;
+    text-align: left;
+    
+}
+
+ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+.right-image {
+    float: right;
+    margin-left: 10px;
+}
+
+.education, .internship {
+    overflow: auto;
+}
+
+.project-item {
+    display: flex;
+    justify-content: space-between; 
+    align-items: left;
+    margin-bottom: 8px; 
+    font-size: 17px;
+}
+
+.text {
+    flex: 1; 
+    margin-right: 10px; 
+    line-height: 1.5;
+}
+
+a {
+    font-size: 14px; 
+    color: #161630; 
+    text-decoration: underline; 
+    white-space: nowrap; 
+}
+
+.marquee {
+    width: 100%;
+    overflow: hidden; 
+    background-color: #f1dd6a; 
+    color: #235d3a; 
+    font-size: 20px;
+    white-space: nowrap; 
+    box-sizing: border-box; 
+    padding: 1px 1px; 
+    position: fixed;
+    bottom: 0;
+}
+
+.marquee p {
+    display: inline-block;
+    padding-left: 30%; 
+    margin-right: 15px;
+    animation: marquee 15s linear infinite; 
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%); 
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
+}
